@@ -1,0 +1,18 @@
+<div class="col-md-6 col-md-offset-3">
+    <form name="form" >
+        <div class="form-group">
+            <label for="username" i18n>Username</label>
+            <input type="text"  [(ngModel)]="loginModel.userName" class="form-control" name="username"   />
+            
+        </div>
+        <div class="form-group" >
+            <label for="password" i18n>Password</label>
+            <input type="password" [(ngModel)]="loginModel.passWord" class="form-control" name="password" />
+        </div>
+        <div class="form-group">
+            <button type = "button" class="btn btn-primary" (click)="onClickFormLogin()" i18n>Login</button>
+            <button type = "button" class="btn btn-primary" i18n>Register</button>
+            <!-- <a [routerLink]="['/register']" class="btn btn-link">Register</a> -->
+        </div>
+    </form>
+</div>
